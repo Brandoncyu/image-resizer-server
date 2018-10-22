@@ -56,10 +56,10 @@ You have the option to provide the height and/or width of your requested resized
 
 **Whereas if you provide both a respective height AND width of a resized image, aspect ratio will be ignored.** The resulting resized image will have the requested height and width.
 
-All resized images will be saved to the same folder as the original images. **It will have '-resizeOption' appended to the original name before the extension.** For example, any resized images requested against the image above will be saved as:
+All resized images will be saved to the same folder on your file system as the raw original images. **It will have '-resizeOption' appended to the original name before the extension.** For example, any resized images requested against the image above will be saved as:
 
 ```
-localhost:5000/Users/admin/Desktop/Brandon2-resizeOption.jpg
+/Users/admin/Desktop/Brandon2-resizeOption.jpg
 ```
 
 The original images will **not** be erased. They will remain on your file system.
