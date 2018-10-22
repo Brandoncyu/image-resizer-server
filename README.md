@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software.
 
 * fork and clone this repository
 
@@ -25,14 +25,14 @@ You also must be able to copy file paths of the raw images on your file system. 
 Install the Node dependencies:
 
 ```shell
-* run npm install
+run npm install
 ```
 
 
 Finally, start the server in development mode:
 
 ```shell
-* npm run dev
+npm run dev
 ```
 
 ## Routes

@@ -11,12 +11,18 @@ function getPhoto(req, res, next){
   fileSplit[secondToLast] = fileSplit[secondToLast] + '-resizeOption'
   const newPath = fileSplit.join('.')
 
+  let success = (response) =>{
+    res.status(201).send({status: 201, message: response})
+  }
+
+  let error = (response)=> {
+    next({status: 404, message: response})
+  }
+
   if (width === null || height === null){
-    let data = model.makePhotoNoRatio(filePath, width, height, newPath)
-    res.send({data})
+    model.makePhotoNoRatio(filePath, width, height, newPath, success, error)
   } else {
-    let data = model.makePhoto(filePath, width, height, newPath)
-    res.send({data})
+    model.makePhoto(filePath, width, height, newPath, success, error)
   }
 }
 

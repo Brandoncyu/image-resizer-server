@@ -6,14 +6,9 @@ const {
 } = process.env
 
 const app = express()
-
-if (NODE_ENV === 'development') {
-  require('dotenv').load()
-  app.use(morgan('dev'))
-}
-
-app.disable('x-powered-by')
+app.use(morgan('dev'))
 app.use(bodyParser.json())
+
 
 app.use('/', require('./src/routes/photos'))
 
@@ -34,14 +29,5 @@ app.use((err, req, res, next) => {
   })
 })
 
-app.use((req, res, next) => {
-  const status = 404
-  const error = `Could not ${req.method} ${req.url}`
-
-  next({
-    status,
-    error
-  })
-})
 
 module.exports = app
