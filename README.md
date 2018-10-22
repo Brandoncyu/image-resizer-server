@@ -73,14 +73,6 @@ In addition, all resize requests to files that are not images (i.e., files that 
 * [Node](https://nodejs.org/en/) - Package ecosystem
 * [GraphicsMagick for Node](https://github.com/aheckmann/gm) - An image-processing package that has been refactored for Node.
 
-## Contributing
-
-Please send me a message for details on our code of conduct, and the process for submitting pull requests.
-
 ## Author
 
 * **Brandon Yu** - *Initial work* - [Brandoncyu](https://github.com/Brandoncyu)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
