@@ -14,12 +14,11 @@ What things you need to install the software and how to install them
 
 * fork and clone this repository
 
-* You also must be able to copy file paths of the raw images on your file system. If you are unaware of how to do this, follow the instructions in either of the links below:
+You also must be able to copy file paths of the raw images on your file system. If you are unaware of how to do this, follow the instructions in either of the links below:
 
-```
 * for PC: [Windows Tips: Copy a File Path, Show or Hide Extensions](https://www.pcworld.com/article/251406/windows_tips_copy_a_file_path_show_or_hide_extensions.html)
 * for Mac: [Quickly Copy a File or Folder Path to the Clipboard in Mac OS X](http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/)
-```
+
 
 ### Installing
 
