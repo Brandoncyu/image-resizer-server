@@ -52,11 +52,11 @@ You will need to copy and paste your filepath of the raw image, and add the end 
 localhost:5000/Users/admin/Desktop/Brandon2.jpg
 ```
 
-You have the option to provide the height and/or width of your requested resized image within the body of your post request. If you put in either the height or the width without putting in the other, the aspect ratio will be respected. For example, if the original image was 400x200 and you ask for the new size to simply have a width of 200 (without requesting a height), the resized image will have dimensions of 200x100. This will hold true if you make a resized image request with simply a height of 100.
+You have the option to provide the height and/or width of your requested resized image within the body of your post request. **If you put in either the height or the width without putting in the other, the aspect ratio will be respected.** For example, if the original image was 400x200 and you ask for the new size to simply have a width of 200 (without requesting a height), the resized image will have dimensions of 200x100. This will hold true if you make a resized image request with simply a height of 100.
 
-Whereas if you provide both a respective height AND width of a resized image, aspect ratio will be ignored. The resulting resized image will have the requested height and width.
+**Whereas if you provide both a respective height AND width of a resized image, aspect ratio will be ignored.** The resulting resized image will have the requested height and width.
 
-All resized images will be saved to the same folder as the original images. It will have '-resizeOption' appended to the original name before the extension. For example, any resized images requested against the image above will be saved as:
+All resized images will be saved to the same folder as the original images. **It will have '-resizeOption' appended to the original name before the extension.** For example, any resized images requested against the image above will be saved as:
 
 ```
 localhost:5000/Users/admin/Desktop/Brandon2-resizeOption.jpg
