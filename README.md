@@ -1,6 +1,6 @@
 # NBC Image Resizer (backend)
 
-For my application for the Software Engineer, Device Services at NBC News, I was tasked at creating a web service to handle image resize requests. This application was built in Node. A further description can be found [here](./NBC-News-Digital-Code-Challenge.pdf).
+For my application for the Software Engineer, Device Services at NBC News, I was tasked at creating a web service to handle image resize requests. This application was built in Node. ***[A further description can be found here](./NBC-News-Digital-Code-Challenge.pdf)***.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ Install the Node dependencies:
 * run npm install
 ```
 
-You also must be able to copy file paths of images on your file system. If you are unaware of how to do this, follow the instructions in either of the links below:
+You also must be able to copy file paths of the raw images on your file system. If you are unaware of how to do this, follow the instructions in either of the links below:
 
 * for PC: [Windows Tips: Copy a File Path, Show or Hide Extensions](https://www.pcworld.com/article/251406/windows_tips_copy_a_file_path_show_or_hide_extensions.html)
 * for Mac: [Quickly Copy a File or Folder Path to the Clipboard in Mac OS X](http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/)
@@ -42,13 +42,13 @@ Finally, start the server in development mode:
 }
 ```
 
-You will need to copy and paste your filepath, and add the end of your post route when making a request to the server. For instance, if the path to one of your files is ***'/Users/admin/Desktop/Brandon1.jpg'***, then your post request will be:
+You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is ***'/Users/admin/Desktop/Brandon1.jpg'***, then your post request will be:
 
 ```
 localhost:5000/Users/admin/Desktop/Brandon2.jpg
 ```
 
-You have the option to provide the height and/or width of your requested resized image within the body of your post request. If you put in either the height or the width without putting in the other, the aspect ratio will be respected. For example, if the original image was 400x200 and you ask for the new size to simply have a 200 width, the resized image will have dimensions of 200x100.
+You have the option to provide the height and/or width of your requested resized image within the body of your post request. If you put in either the height or the width without putting in the other, the aspect ratio will be respected. For example, if the original image was 400x200 and you ask for the new size to simply have a width of 200 (without requesting a height), the resized image will have dimensions of 200x100. This will hold true if you make a resized image request with simply a height of 100.
 
 Whereas if you provide both a respective height AND width of a resized image, aspect ratio will be ignored. The resulting resized image will have the requested height and width.
 
