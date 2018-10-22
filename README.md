@@ -47,7 +47,7 @@ Finally, start the server in development mode:
 }
 ```
 
-You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is ***'/Users/admin/Desktop/Brandon1.jpg'***, then your post request will be:
+You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is **'/Users/admin/Desktop/Brandon1.jpg'**, then your post request will be:
 
 ```
 localhost:5000/Users/admin/Desktop/Brandon2.jpg
