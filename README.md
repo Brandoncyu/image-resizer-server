@@ -62,7 +62,7 @@ All resized images will be saved to the same folder as the original images. **It
 localhost:5000/Users/admin/Desktop/Brandon2-resizeOption.jpg
 ```
 
-The original images will not be erased, and will remain on your file system.
+The original images will **not** be erased. They will remain on your file system.
 
 In addition, all resize requests to files that are not images (i.e., files that do not have JPG, PNG, or GIF extensions) will be ignored.
 
