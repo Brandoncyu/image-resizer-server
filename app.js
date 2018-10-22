@@ -1,7 +1,6 @@
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const cors = require('cors')
 const {
   PORT = 5000, NODE_ENV = 'development'
 } = process.env
@@ -13,12 +12,8 @@ if (NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
 
-app.use(cors())
 app.disable('x-powered-by')
 app.use(bodyParser.json())
-
-//use require to require images.
-//look up path documentation.
 
 app.use('/', require('./src/routes/photos'))
 
