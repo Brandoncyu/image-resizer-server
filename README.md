@@ -1,6 +1,6 @@
 # NBC Image Resizer (backend)
 
-For my application for the Software Engineer, Device Services at NBC News, I was tasked at creating a web service to handle image resize requests. This application was built in Node. A further description can be found [here](./NBC-News-Digital-Code Challenge.pdf).
+For my application for the Software Engineer, Device Services at NBC News, I was tasked at creating a web service to handle image resize requests. This application was built in Node. A further description can be found [here](./NBC-News-Digital-Code-Challenge.pdf).
 
 ## Getting Started
 
@@ -39,8 +39,8 @@ Finally, start the server in development mode:
 - at least one(1) of the following fields in body is required:
 ```
 {
-    height,           // STRING
-    width,            // STRING
+    height,           // INTEGER
+    width,            // INTEGER
 }
 ```
 
@@ -57,10 +57,12 @@ Whereas if you provide both a respective height AND width of a resized image, as
 All resized images will be saved to the same folder as the original images. It will have '-resizeOption' appended to the original name before the extension. For example, any resized images requested against the image above will be saved as:
 
 ```
-localhost:5000/Users/admin/Desktop/Brandon2***-resizeOption***.jpg
+localhost:5000/Users/admin/Desktop/Brandon2-resizeOption.jpg
 ```
 
-The original images will not be erased.
+The original images will not be erased, and will remain on your file system.
+
+In addition, all resize requests to files that are not images (i.e., files that do not have JPG, PNG, or GIF extensions) will be ignored.
 
 ## Built With
 
