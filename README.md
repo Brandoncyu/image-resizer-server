@@ -46,10 +46,16 @@ npm run dev
 }
 ```
 
-You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is **'/Users/admin/Desktop/Brandon1.jpg'**, then your post request will be:
+You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is:
 
 ```
-localhost:5000/Users/admin/Desktop/Brandon2.jpg
+/Users/admin/Desktop/Brandon1.jpg
+```
+
+Then your **post request** will be:
+
+```
+localhost:5000/Users/admin/Desktop/Brandon1.jpg
 ```
 
 You have the option to provide the height and/or width of your requested resized image within the body of your post request. **If you put in either the height or the width without putting in the other, the aspect ratio will be respected.** For example, if the original image was 400x200 and you ask for the new size to simply have a width of 200 (without requesting a height), the resized image will have dimensions of 200x100. This will hold true if you make a resized image request with simply a height of 100.
@@ -59,7 +65,7 @@ You have the option to provide the height and/or width of your requested resized
 All resized images will be saved to the same folder on your file system as the raw original images. **It will have '-resizeOption' appended to the original name before the extension.** For example, any resized images requested against the image above will be saved as:
 
 ```
-/Users/admin/Desktop/Brandon2-resizeOption.jpg
+/Users/admin/Desktop/Brandon1-resizeOption.jpg
 ```
 
 The original images will **not** be erased. They will remain on your file system.
