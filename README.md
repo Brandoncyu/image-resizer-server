@@ -46,7 +46,7 @@ npm run dev
 }
 ```
 
-You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the path to one of your raw images is:
+You will need to copy and paste your filepath of the raw image, and add the end of your post route when making a request to the server. For instance, if the **file path** to one of your raw images is:
 
 ```
 /Users/admin/Desktop/Brandon1.jpg
