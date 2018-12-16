@@ -1,8 +1,6 @@
-# NBC Image Resizer (backend)
+# Image Resizer
 
-For my application for the Software Engineer, Device Services at NBC News, I was tasked with creating a web service to handle image resize requests. This application was built in Node.
-
-**[A further description of the coding challenge can be found here](./NBC-News-Digital-Code-Challenge.pdf)**.
+I was tasked with creating a web service to handle image resize requests. This application was built in Node.
 
 ## Getting Started
 
